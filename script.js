@@ -112,3 +112,18 @@ function typeEffect() {
   }
 }
 typeEffect();
+document.addEventListener("click", function (e) {
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-toggle");
+
+  if (!music || !btn) return;
+  if (e.target !== btn) return;
+
+  if (music.paused) {
+    music.play();
+    btn.innerText = "Music ON 🔊";
+  } else {
+    music.pause();
+    btn.innerText = "Music OFF 🔇";
+  }
+});
