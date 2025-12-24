@@ -99,3 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
     updateMusicButton();
   }
 });
+const text = document.getElementById("typing-text");
+const content = text.innerHTML;
+text.innerHTML = "";
+let i = 0;
+
+function typeEffect() {
+  if (i < content.length) {
+    text.innerHTML += content.charAt(i);
+    i++;
+    setTimeout(typeEffect, 40);
+  }
+}
+typeEffect();
