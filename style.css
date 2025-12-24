@@ -7,13 +7,17 @@
 }
 
 body {
+  body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, #fff5f5, #e8f5e9);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
-  color: #333;
-  animation: fadeIn 1s ease;
 }
+
 
 /* Page animation */
 @keyframes fadeIn {
