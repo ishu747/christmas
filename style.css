@@ -137,13 +137,7 @@ p {
 
 /* Mobile tweaks */
 @media (max-width: 480px) {
-  .container {
-    @keyframes fall {
-  to {
-    transform: translateY(110vh);
-  }
-}
-
+ 
     padding: 60px 16px;
   }
 }
